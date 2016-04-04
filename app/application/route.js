@@ -6,7 +6,6 @@ export default Ember.Route.extend({
 
   actions: {
     signOut () {
-      console.log('is hitting route');
       this.get('auth').signOut()
       .then(() => this.transitionTo('sign-in'))
       .then(() => {
