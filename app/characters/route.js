@@ -3,8 +3,8 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model: function(){
     return {
-      characters: this.store.findAll('character'),
-      players: this.store.findAll('player')
+      characters: this.get('store').findAll('character'),
+      players: this.get('store').findAll('player')
     };
   },
 });
