@@ -32,9 +32,18 @@ export default Ember.Route.extend({
           "selected_opponent": playAgainstCharacter.id
         }
       });
-      this.refresh();
       console.log('Player created!');
+      this.refresh();
+    },
 
+    updatePlayer: function(player) {
+      console.log('Player updated!');
+      player.save();
+    },
+
+    destroyPlayer: function(player){
+      console.log('Player destroyed!');
+      player.destroyRecord();
     }
   }
 });

@@ -1,8 +1,16 @@
-<p>{{player.name}}<br />
-Rank: {{player.rank}}<br />
-Characters: {{player.characters}}<br />
-Opponents: {{player.opponents}}</p>
+<div>
+  {{#unless isEditable}}
+    <p>{{player.name}}<br />
+    Rank: {{player.rank}}<br />
+    Characters: {{player.characters}}<br />
+    Opponents: {{player.opponents}}</p>
+  {{else}}
+    <p>Name: {{input value=player.name}}</p>
+    <p>Rank: {{input value=player.rank}}</p>
+    <p>Characters: {{player.characters}}</p>
+    <p>Opponents: {{player.opponents}}</p>
+    <button {{action 'updatePlayer'}}>EDIT</button>
+    <button {{action 'destroyPlayer'}}>DESTROY</button>
 
-{{!-- Characters: {{#each player.characters as |character|}}
-              {{character.name}}<br />
-            {{/each}} --}}
+  {{/unless}}
+</div>
