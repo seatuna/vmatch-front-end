@@ -14,7 +14,7 @@ Game Underground at the Natick Mall recently started a training workshop for peo
 
 ## Wireframes
 
-[VMatch Wireframe](http://img.photobucket.com/albums/v53/chibi_ynm/vmatch-wireframe_zpspytkgghv.jpg)
+![VMatch Wireframe](http://img.photobucket.com/albums/v53/chibi_ynm/vmatch-wireframe_zpspytkgghv.jpg)
 
 ## User Stories
 
