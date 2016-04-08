@@ -40,8 +40,10 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/vmatch-front-end';
+    ENV.locationType = 'hash';
   }
+  
   ENV.baseURL = '/vmatch-front-end';
   ENV.locationType = 'hash';
   ENV.host = 'https://vmatch.herokuapp.com';
