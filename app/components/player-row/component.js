@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  tagName: 'div',
+  classNames: ['card','card-block'],
   isEditable: false,
   doubleClick: function(){
     this.toggleProperty('isEditable');

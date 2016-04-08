@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: 'form',
-  classNames: ['form-horizontal'],
+  tagName: 'div',
+  classNames: ['form-group','col-md-6'],
 
   credentials: {},
 

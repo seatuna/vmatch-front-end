@@ -1,8 +1,8 @@
-<h5> Add Player </h5>
+<h3> Add Player </h3>
 <div>
   {{input placeholder='Name' value=playerForm.name}}
   {{input placeholder='Rank' value=playerForm.rank}}
   {{input placeholder='Character' value=characterName}}
   {{input placeholder='Opponent' value=opponentName}}
 </div>
-<button {{action 'createPlayer'}}> Submit </button><br /><br />
+<p><button class="btn btn-primary" {{action 'createPlayer'}}> Submit </button><br /><br /></p>

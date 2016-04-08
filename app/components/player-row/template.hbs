@@ -1,5 +1,4 @@
-<div>
-  {{#unless isEditable}}
+{{#unless isEditable}}
     <p>{{player.name}}<br />
     Rank: {{player.rank}}<br />
     Characters: {{player.characters}}<br />
@@ -9,8 +8,9 @@
     <p>Rank: {{input value=player.rank}}</p>
     <p>Characters: {{player.characters}}</p>
     <p>Opponents: {{player.opponents}}</p>
-    <button {{action 'updatePlayer'}}>EDIT</button>
-    <button {{action 'destroyPlayer'}}>DESTROY</button>
+    <button class="btn btn-primary" {{action 'updatePlayer'}}>EDIT</button>
+    <button class="btn btn-danger" {{action 'destroyPlayer'}}>DESTROY</button>
 
   {{/unless}}
-</div>
+
+<hr>

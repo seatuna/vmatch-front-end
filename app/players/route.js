@@ -44,6 +44,10 @@ export default Ember.Route.extend({
     destroyPlayer: function(player){
       console.log('Player destroyed!');
       player.destroyRecord();
+    },
+
+    match: function(){
+      console.log('This does nothing right now');
     }
   }
 });
