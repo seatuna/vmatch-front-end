@@ -1,7 +1,9 @@
-{{create-player-form routeCreatePlayer='createPlayer'}}
+<div class="content">
+  {{create-player-form routeCreatePlayer='createPlayer'}}
 
-{{#each model.players as |player|}}
-  {{player-row player=player
-      routeUpdatePlayer='updatePlayer'
-      routeDestroyPlayer='destroyPlayer'}}
-{{/each}}
+  {{#each model.players as |player|}}
+    {{player-row player=player
+        routeUpdatePlayer='updatePlayer'
+        routeDestroyPlayer='destroyPlayer'}}
+  {{/each}}
+</div>
