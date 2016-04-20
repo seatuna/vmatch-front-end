@@ -10,6 +10,13 @@ h2 {
   text-align: center;
 }
 
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  margin: auto;
+  height: 40%;
+  width: 100%;
+}
+
 .text {
   font-family: 'Kreon', serif;
 }
