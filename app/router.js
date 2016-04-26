@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('players');
   this.route('characters');
   this.route('opponents');
+  this.route('about');
 });
 
 export default Router;
